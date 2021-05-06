@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/Foxbel/static/css/main.748eb77f.chunk.css",
-    "main.js": "/Foxbel/static/js/main.89cc6b5f.chunk.js",
-    "main.js.map": "/Foxbel/static/js/main.89cc6b5f.chunk.js.map",
+    "main.js": "/Foxbel/static/js/main.b54e322d.chunk.js",
+    "main.js.map": "/Foxbel/static/js/main.b54e322d.chunk.js.map",
     "runtime-main.js": "/Foxbel/static/js/runtime-main.bc3beeb9.js",
     "runtime-main.js.map": "/Foxbel/static/js/runtime-main.bc3beeb9.js.map",
-    "static/js/2.7c808edf.chunk.js": "/Foxbel/static/js/2.7c808edf.chunk.js",
-    "static/js/2.7c808edf.chunk.js.map": "/Foxbel/static/js/2.7c808edf.chunk.js.map",
+    "static/js/2.0c77a12f.chunk.js": "/Foxbel/static/js/2.0c77a12f.chunk.js",
+    "static/js/2.0c77a12f.chunk.js.map": "/Foxbel/static/js/2.0c77a12f.chunk.js.map",
     "index.html": "/Foxbel/index.html",
     "static/css/main.748eb77f.chunk.css.map": "/Foxbel/static/css/main.748eb77f.chunk.css.map",
-    "static/js/2.7c808edf.chunk.js.LICENSE.txt": "/Foxbel/static/js/2.7c808edf.chunk.js.LICENSE.txt"
+    "static/js/2.0c77a12f.chunk.js.LICENSE.txt": "/Foxbel/static/js/2.0c77a12f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.bc3beeb9.js",
-    "static/js/2.7c808edf.chunk.js",
+    "static/js/2.0c77a12f.chunk.js",
     "static/css/main.748eb77f.chunk.css",
-    "static/js/main.89cc6b5f.chunk.js"
+    "static/js/main.b54e322d.chunk.js"
   ]
 }
