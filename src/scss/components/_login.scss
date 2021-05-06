@@ -1,0 +1,58 @@
+.login{
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &_card{
+    width: 400px;
+    height: fit-content;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: $color-red;
+    background-image: linear-gradient(to bottom right, $color-red, $color-red-light);
+    box-shadow: 0 10px 20px rgba($color: #000000, $alpha: .3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &_logo{
+    width: 100%;
+  }
+  &_text{
+    margin-bottom: 100px;
+    color: rgb(243, 243, 243);
+  }
+  &_button{
+    @include font-22-bold;
+    width: 100%;
+    height: 60px;
+    outline: unset;
+    border-radius: 100px;
+    background-color: white;
+    box-shadow: 0 8px 15px rgba($color: #000000, $alpha: .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-spotify-black;
+    text-decoration: unset;
+    transition: background-color .2s, box-shadow .2s, color .2s;
+    i{
+      margin-left: 10px;
+      color: $color-spotify;
+      font-size: 1.4em;
+      transition: color .2s;
+    }
+    &:hover{
+      background-color: $color-spotify-dark;
+      box-shadow: 0 8px 25px rgba($color: #000000, $alpha: .3);
+      color: white;
+      i{
+        color: $color-spotify-black;
+      }
+    }
+  }
+}

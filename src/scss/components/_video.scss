@@ -1,0 +1,344 @@
+.container{
+  grid-area: videos;
+  &_title{
+    color: $color-red;
+  }
+  &_grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+    column-gap: 22px;
+    row-gap: 25px;
+  }
+}
+
+.details{
+  grid-area: details;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  &_img_container{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  &_img{
+    width: 100%;
+    height: 100%;
+    &_button{
+      width: 100%;
+      height: 100%;
+      outline: unset;
+      border: unset;
+      padding: unset;
+      background-color: unset;
+      text-shadow: 0 0 20px rgba($color: #000000, $alpha: .5);
+      color: white;
+      font-size: 72px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: text-shadow .2s;
+      &:hover{
+        text-shadow: 0 0 40px rgba($color: #000000, $alpha: 1);
+      };
+    }
+  }
+  &_info_container{
+    width: calc(100% - 250px);
+    height: 100%;
+    padding: 40px 32px 22px;
+    background: rgba(167, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    position: relative;
+  }
+  &_title{
+    margin: 0;
+  }
+  &_caption_container{
+    display: flex;
+    align-items: center
+  }
+  &_caption{
+    @include font-14-regular;
+    margin: 0;
+  }
+  &_followers{
+    @include font-12-normal;
+    margin-left: 16px;
+    color: $color-red-dark;
+  }
+  &_description{
+    @include font-12-height;
+  }
+  &_buttons_container{
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 30px;
+    gap: 20px;
+  }
+  &_button{
+    @include font-14-regular;
+    outline: unset;
+    border: unset;
+    padding: unset;
+    background-color: unset;
+    color: white;
+    transition: background-color .2s, color .2s;
+    &-play, &-follow{
+      @extend .details_button;
+      width: 120px;
+      height: 100%;
+      border-radius: 100px;
+    }
+    &-play{
+      background-color: $color-red;
+      &:hover{
+        background-color: $color-red-dark;
+      }
+    }
+    &-follow{
+      background-color: white;
+      color: $color-red;
+      &:hover{
+        background-color: #dfdfdf;
+      }
+    }
+    &-menu{
+      @extend .details_button;
+      font-size: 18px;
+      &:hover{
+        color: #dfdfdf;
+      }
+    }
+  }
+}
+
+.item{
+  width: 160px;
+  height: 205px;
+  white-space: nowrap;
+  overflow: hidden;
+  &_img_container{
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  &_img{
+    width: 100%;
+    height: 100%;
+  }
+  &_button{
+    outline: unset;
+    border: unset;
+    padding: unset;
+    background-color: unset;
+    color: white;
+    position: absolute;
+
+    &-play{
+      @extend .item_button;
+      width: 100%;
+      height: 100%;
+      text-shadow: 0 0 10px rgba($color: #000000, $alpha: .5);
+      font-size: 32px;
+      top: 0;
+      left: 0;
+      transition: color .2s, text-shadow .2s;
+      &:hover{
+        text-shadow: 0 0 20px rgba($color: #000000, $alpha: 1);
+        color: $color-red;
+      };
+    }
+    &-menu{
+      @extend .item_button;
+      padding: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 0 0 5px rgba($color: #000000, $alpha: .5);
+      font-size: 18px;
+      top: 0px;
+      right: 0px;
+      transition: color .2s, text-shadow .2s;
+      &:hover{
+        text-shadow: 0 0 10px rgba($color: #000000, $alpha: .75);
+        color: $color-red;
+      };
+    }
+  }
+  &_title{
+    @include font-14-bold;
+    margin: 8px 0 0;
+    color: $color-gray-dark;
+  }
+  &_caption{
+    @include font-12-normal;
+    margin: 0;
+    color: $color-gray;
+  }
+}
+
+@media (max-width: 1300px) {
+  .container{
+    &_grid{
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+@media (max-width: 1060px) {
+  .container{
+    &_grid{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .details{
+    &_img_container{
+      width: 220px;
+      height: 220px;
+    }
+    &_info_container{
+      width: calc(100% - 220px);
+      padding: 20px;
+    }
+    &_buttons_container{
+      gap: 10px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container{
+    &_grid{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  // .details{
+
+  // }
+}
+
+@media (max-width: 560px) {
+  .container{
+    &_grid{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .details{
+    &_img_container{
+      width: 200px;
+      height: 200px;
+    }
+    &_info_container{
+      width: calc(100% - 200px);
+      padding: 10px;
+    }
+    &_description{
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    &_buttons_container{
+      gap: 5px;
+    }
+    &_button{
+      &-play, &-follow{
+        width: 90px;
+      }
+      &-menu{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .details{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    &_img_container{
+      width: 280px;
+      height: 280px;
+    }
+    &_info_container{
+      width: 100%;
+      padding: 10px;
+    }
+    &_description{
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    &_buttons_container{
+      width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    &_button{
+      &-play, &-follow{
+        width: 100%;
+      }
+      &-menu{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .container{
+    &_grid{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .details{
+    &_img_container{
+      width: 100%;
+      height: fit-content;
+    }
+  }
+  .item{
+    width: 250px;
+    height: 320px;
+    &_img_container{
+      width: 250px;
+      height: 250px;
+    }
+    &_button{
+      &-play{
+        font-size: 50px;
+      }
+    }
+    &_title{
+      color: $color-gray-dark;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px
+    }
+    &_caption{
+      margin: 0;
+      color: $color-gray;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}

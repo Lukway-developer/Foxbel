@@ -1,0 +1,73 @@
+$color-red-light: #FF7676;
+$color-red: #e86060;
+$color-red-dark: #662323;
+
+$color-gray-light: #BDBDBD;
+$color-gray: #828282;
+$color-gray-dark: #555555;
+
+$color-spotify: #1ed760;
+$color-spotify-dark: #1db954;
+$color-spotify-black: #191414;
+
+$font: 'Quicksand', sans-serif;
+
+@mixin font-22-bold {
+  font-family: Quicksand;
+  font-size: 18px;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+@mixin font-18-regular {
+  font-family: Quicksand;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+}
+
+@mixin font-16-regular {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@mixin font-16-bold {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@mixin font-14-regular {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@mixin font-14-bold {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@mixin font-12-height {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+@mixin font-12-normal {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+@mixin font-10-regular {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+}
