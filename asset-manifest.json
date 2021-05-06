@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Foxbel/static/css/main.748eb77f.chunk.css",
-    "main.js": "/Foxbel/static/js/main.a01cf90e.chunk.js",
-    "main.js.map": "/Foxbel/static/js/main.a01cf90e.chunk.js.map",
+    "main.js": "/Foxbel/static/js/main.b54e322d.chunk.js",
+    "main.js.map": "/Foxbel/static/js/main.b54e322d.chunk.js.map",
     "runtime-main.js": "/Foxbel/static/js/runtime-main.bc3beeb9.js",
     "runtime-main.js.map": "/Foxbel/static/js/runtime-main.bc3beeb9.js.map",
     "static/js/2.0c77a12f.chunk.js": "/Foxbel/static/js/2.0c77a12f.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.bc3beeb9.js",
     "static/js/2.0c77a12f.chunk.js",
     "static/css/main.748eb77f.chunk.css",
-    "static/js/main.a01cf90e.chunk.js"
+    "static/js/main.b54e322d.chunk.js"
   ]
 }
