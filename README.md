@@ -12,8 +12,8 @@ You can see this project here [Foxbel](https://lukway-developer.github.io/Foxbel
 #### <img src="https://github.com/Lukway-developer/Logos/blob/master/spotify.svg" title="Spotify Logo" height=20/> Spotify API
 
 ### `Preview`
-![Foxbel Preview](https://github.com/Lukway-developer/Projects-Images/blob/master/foxbel/home.PNG "Preview 1")
-![Foxbel Preview](https://github.com/Lukway-developer/Projects-Images/blob/master/foxbel/login.PNG "Preview 2")
+![Foxbel Preview](https://github.com/Lukway-developer/Projects-Images/blob/master/foxbel/login.PNG "Preview 1")
+![Foxbel Preview](https://github.com/Lukway-developer/Projects-Images/blob/master/foxbel/home.PNG "Preview 2")
 ![Foxbel Preview](https://github.com/Lukway-developer/Projects-Images/blob/master/foxbel/music.png "Preview 3")
 
 ### `About Lukway`
