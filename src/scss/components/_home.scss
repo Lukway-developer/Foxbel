@@ -7,11 +7,42 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "navbar main main main";
   position: relative;
+  &_animation{
+    width: 100%;
+    height: 100%;
+    background-color: $color-red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    &_image{
+      width: 200px;
+      animation: appear 2s ease-out;
+    }
+  }
 }
 
 @media (max-width: 768px) {
   .home{
     grid-template-columns: 1fr;
     grid-template-areas: "main";
+  }
+}
+
+@keyframes appear {
+  0%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  25%{
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  50%{
+    opacity: 1;
+    transform: scale(1);
   }
 }

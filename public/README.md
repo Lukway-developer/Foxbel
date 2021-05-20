@@ -1,4 +1,4 @@
-# Foxbel - Music App ![Foxbel Logo](public/foxbel-icon.ico "Foxbel Logo")
+# Foxbel - Music App ![Foxbel Logo](foxbel-icon.ico "Foxbel Logo")
 You can see this project here [Foxbel](https://lukway-developer.github.io/Foxbel/) (You need a Premium Spotify account).
 
 ## Content

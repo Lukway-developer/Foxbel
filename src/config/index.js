@@ -1,6 +1,6 @@
 const config = {
   endpoint: 'https://accounts.spotify.com/authorize',
-  redirect: 'http://localhost:3000/',
+  redirect: 'https://lukway-developer.github.io/Foxbel/',
   scopes: [
     'user-read-currently-playing',
     'user-read-recently-played',

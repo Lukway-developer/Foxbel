@@ -56,3 +56,14 @@
     }
   }
 }
+
+@media (max-width: 425px) {
+  .login{
+    padding: 0 16px;
+    text-align: center;
+    &_card{
+      width: 100%;
+      padding: 20px;
+    }
+  }
+}

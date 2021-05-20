@@ -16,7 +16,7 @@ const Home = () => {
   const [playState, setPlayState] = useState(false)
   const [firstLoad, setFirstLoad] = useState(true)
   const { userContext, setUserContext } = useContext(UserContext)
-  const homeAnimationTime = 3000
+  const homeAnimationTime = 2000
   const hash = getTokenFromURL()
   const token = hash.access_token
 
@@ -32,7 +32,7 @@ const Home = () => {
       })
     } else {
       setTimeout(() => {
-        window.location.href = '/login'
+        window.location.href = '/Foxbel/login'
       }, homeAnimationTime)
     }
   }, [])
@@ -64,6 +64,11 @@ const Home = () => {
       <NavBar />
       <MainContent />
       <SpotifyPlayer token={token} tracksUri={tracks} playState={playState} />
+      {!token
+        ? <div className='home_animation'>
+            <img className='home_animation_image' src='./images/foxbel-music-white-icon@3x.png' alt='Foxbel Icon' />
+          </div>
+        : <></>}
     </main>
   )
 }
